@@ -12,13 +12,20 @@ class _InferiorNavigationBar extends State<InferiorNavigationBar> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
-      switch (_selectedIndex) {
+
+      switch (index) {
         case 0:
-          Navigator.pushNamed(context, '/loca');
+          if (ModalRoute.of(context)!.settings.name != '/loca') {
+            Navigator.pushNamedAndRemoveUntil(
+                context, '/loca', (route) => false);
+          }
           break;
         case 1:
-          Navigator.pushNamed(context, '/');
+          if (ModalRoute.of(context)!.settings.name != '/') {
+            Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
+          }
           break;
+
         default:
           print("out of bound of index");
       }
@@ -49,7 +56,7 @@ class _InferiorNavigationBar extends State<InferiorNavigationBar> {
                 Icons.home,
                 size: 40,
               ),
-              label: 'Home')
+              label: 'Home'),
         ],
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.green,
