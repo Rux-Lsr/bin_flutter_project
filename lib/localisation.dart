@@ -7,10 +7,25 @@ class LocalisationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text("Bin Localiser"),
-        elevation: 10.0,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(80),
+        child: Container(
+          child: Center(
+            child: Text(
+              "Bin localiser",
+              style: TextStyle(fontSize: 30),
+            ),
+          ),
+          decoration: BoxDecoration(color: Colors.white, boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 5,
+              blurRadius: 7,
+              offset: Offset(0, 3),
+            )
+          ]),
+          height: 100,
+        ),
       ),
       bottomNavigationBar: InferiorNavigationBar(),
       body: Center(
