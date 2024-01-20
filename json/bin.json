@@ -1,0 +1,53 @@
+[
+    {
+      "capacité": 50,
+      "niveau de remplissage": 0.8,
+      "localisation": "Mvog betsi"
+    },
+    {
+      "capacité": 40,
+      "niveau de remplissage": 0.6,
+      "localisation": "carrefour Obili"
+    },
+    {
+      "capacité": 60,
+      "niveau de remplissage": 0.4,
+      "localisation": "Ancien marché melen"
+    },
+    {
+      "capacité": 30,
+      "niveau de remplissage": 0.2,
+      "localisation": "Poste centrale"
+    },
+    {
+      "capacité": 50,
+      "niveau de remplissage": 0.9,
+      "localisation": "Avenue des banques"
+    },
+    {
+      "capacité": 40,
+      "niveau de remplissage": 0.7,
+      "localisation": "Chateau"
+    },
+    {
+      "capacité": 60,
+      "niveau de remplissage": 0.5,
+      "localisation": "Mokolo"
+    },
+    {
+      "capacité": 30,
+      "niveau de remplissage": 0.3,
+      "localisation": "Madagascar"
+    },
+    {
+      "capacité": 50,
+      "niveau de remplissage": 0.8,
+      "localisation": "Etoug Ebe"
+    },
+    {
+      "capacité": 40,
+      "niveau de remplissage": 0.6,
+      "localisation": "chapelle Obili"
+    }
+  ]
+  

@@ -2,6 +2,9 @@ plugins {
     id "com.android.application"
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
+    id 'com.google.gms.google-services' version '4.4.0' apply false
+
+    //id 'com.google.gms.google-services'
 }
 
 def localProperties = new Properties()
@@ -24,7 +27,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.example.bin_project"
-    compileSdkVersion flutter.compileSdkVersion
+    compileSdkVersion 33
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -64,4 +67,6 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.7.1')
+}
